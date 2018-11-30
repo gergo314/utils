@@ -30,6 +30,17 @@ class g_utils {
       }
       return $results;
   }
+  //CLI-coloring
+  function green($str) {
+    return "\033[32m".$str."\033[0m";
+  }
+  function red($str) {
+      return "\033[31m".$str."\033[0m";
+  }
+  function yellow($str) {
+      return "\033[33m".$str."\033[0m";
+  }
+
 }
 
 ?>
